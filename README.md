@@ -1,7 +1,12 @@
-asdasds
-# Header 1
-## Header 2
-### Header 3
+
+# Multimedia;	video	streaming in eSystems
+
+## Introduction
+Over the last decade, the platform of eSystem have slowly imprinted into our everyday livelihood. A platform which allows accessibility of data, information, access and live feed update creates an easier approach to communication or media. The term multimedia is defined as a combination of information conveyed by text, audio, images or videos; with the common goal of distribution.
+With the vast improvement of eSystems, integration of video processing, the transfer of live multimedia became possible and be used to access information in live sessions. This process has been used for video conferencing, live news, and social feeds. 
+As for video streaming and distribution is used, little is known about the backhand of the process which involve in the technology. This paper looks into the backflow of video streaming.
+
+## Background
 
 - Bulleted
 - List

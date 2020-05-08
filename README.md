@@ -10,11 +10,9 @@ Course : eSystem Design and Development
 Course ID: INFS804
 
 ## Introduction
-Over the last decade, the platform of eSystem has slowly imprinted into our everyday livelihood. A platform that allows access to data, information,  live-feed, and creates an easier approach to communication or media. The term multimedia is defined as a combination of information conveyed by text, audio, images, or videos; with the common goal of distribution.
+Over the last few decades, the platform of eSystem have slowly imprinted into our every livelihood. A platform which allows access to data, information, live-feed and creates an easier approach to communication and media. With distance creating complications and restrictions eSystems have developed and improved transfer of information from text, messages, emails to visual representation of video calls and messages. 
 
-With the vast improvement of eSystems, integration of video processing, the transfer of live multimedia became possible and be used to access information in live sessions. This process has been used for video conferencing, live news, and social feeds. 
-
-As for video streaming and distribution is used, little is known about the backhand of the process which involves in the technology. This paper looks into the backflow of video streaming.
+With improving quality and quantity for eSystems and multimedia, to improve the current stages; we first must look back and understand the foundations and development of the whole process of video streaming. It is true that most of the difficult faced in video streaming is the bandwidth, setting and devices but here we look at the fundamentals and build towards a better and improved model.
 
 ### Video Compression
 H.264 is the standard video coding system that combines block-wise transformation coding and predictive coding to reduce the redundancy of a video. The coding adopts a hierarchical block structure of code unit, a prediction unit and a transforms unit. The coding system divides the picture into slices of code unit tree which is then further divided to create the smallest possible code unit. The data is then processed into a prediction mode and partition size to be stored/transfer. The predictive unit when called upon, then merges the code units or further advancement to the image if requested. (Yang, Lee, Shim & Jeon, 2013)

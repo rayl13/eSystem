@@ -1,4 +1,14 @@
 
+Student ID : 1390847    Name:  Raymond Lum
+
+title: Multimedia; Video Streaming in eSystem 
+
+wikipage: Auckland University of Technology Assignment 1
+
+Course : eSystem Design and Development 
+
+Course ID: INFS804
+
 # Multimedia;	video	streaming in eSystems
 
 ## Introduction
@@ -30,17 +40,22 @@ The Rate-Distortion analyze video displacement similar to forward error correcti
 When the packets that is missing and cannot be avoid, a time allocation is limited to prevent stoppage. An error concealment is then called upon to create a visual artifact of assumed image. The temporal interpolation algorihtm artifacts of large displacements to estimate motion and image trajectories. 
 
 ## Video Compression Coding
-### Transformation Block
+#### Transformation Block
 The first step of video image/coding is the division of image into small blocks. The blocks of pixels are then converted into frequency domain. This process is called the Discrete Cosine Transform. WDCT helps seperate mroe perceptible information from less perceptible information. 
-### Quantization
+#### Quantization
 As the frequency domain varies and are real numbers, quanitization rounds the numbers to their closest integer. While high-frequency DCT that are close to zero will bet set to 0
 
-### Entropy Coding
+#### Entropy Coding
 Nonzero coefficients are encorded by an entropy coder. Zero coefficients are encorded with run-length encoding. The higher the frequency, the shorter code and vice versa. 
-### Decoding
+#### Decoding
 The variable-length code are decoded back to the quantized cofficient. The value is then multipled by the appropriate quantizer step size to get the DCT coefficent. With the DCT coefficent, the value is put in the inverse DCT to get the value of the domain. 
 #note: image will not be identical to orginal image due to lost of information in quantiziation
-### Motion Estimation and Compensation
+#### Motion Estimation and Compensation
 The motion feature are used as the reference frame to predict the current frame. With the predicted new frame is close to the actually frame size, the coded data is less than the original. The process is repeated over each block and processed in a timestamp.
+
 *Motion estimate is requires more computation resource hence, requires the highest activity in video process.*
+
+## Conclusion
+Multimedia operates cover multiple encryption compression of data to smaller bits. The bits are transfers and encryped before sending through various network protocol and packets transfer. During the transfer protocols, information may be lost, altered or stolen which causes visual delays. Delays often happen over the speed of multimedia process with limited information. Although internet bandwidth and traffic often are cause of delays, video processing and encryption may have effects on the video. 
+
 

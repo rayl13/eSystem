@@ -8,8 +8,6 @@ With the vast improvement of eSystems, integration of video processing, the tran
 
 As for video streaming and distribution is used, little is known about the backhand of the process which involve in the technology. This paper looks into the backflow of video streaming.
 
-## Background
-
 ### Video Compression
 H.264 is the standard video coding system which combines block wise transformation coding and predictive coding to reduce the redundancy of a video. The coding adopts a hierarchical block structure of code unit, prediction unit and transform unit. The coding system divides the picture into slices of code unit tree which is then further divided to create the smallest possible code unit. The data is then process into a prediction mode and partition size to be stored/transfer. The predictive unit when called upon, then merge the code units or further advancement to the image if requested. (Yang, Lee, Shim & Jeon, 2013)
 
@@ -22,12 +20,27 @@ In the H264 process, picture data is compressed and divided into semi smaller co
 #### Video Coding 
 Due to low badwith and bitstream, an alternative solution is to create a lower codeing efficiency. The result causes a lower compressed video and minimize the distortion of videos which may occur. The principle operates under the picture selection algorithm. 
 
-### Forward Error Correction
+#### Forward Error Correction
 Forward Error Correction is thee method of controlling possible error with data transmission. The process requires the sender to send a the packets twice and observes the instances and data from the packets. The protocol checks the different layers of bit-rate and combines the partition segments. 
 
-### Rate-Distortion
+#### Rate-Distortion
 The Rate-Distortion analyze video displacement similar to forward error correction base approach, but focus towards the individual packets that are missing. As data have timestamp and protocols, packets missing can be tracked. The mising packets are then requested back from the server end to obtain missing segmans. This approach looks for the important packets missing rather than resending the whole set of packets.
 
-### Error Concealment
+#### Error Concealment
 When the packets that is missing and cannot be avoid, a time allocation is limited to prevent stoppage. An error concealment is then called upon to create a visual artifact of assumed image. The temporal interpolation algorihtm artifacts of large displacements to estimate motion and image trajectories. 
+
+## Video Compression Coding
+### Transformation Block
+The first step of video image/coding is the division of image into small blocks. The blocks of pixels are then converted into frequency domain. This process is called the Discrete Cosine Transform. WDCT helps seperate mroe perceptible information from less perceptible information. 
+### Quantization
+As the frequency domain varies and are real numbers, quanitization rounds the numbers to their closest integer. While high-frequency DCT that are close to zero will bet set to 0
+
+### Entropy Coding
+Nonzero coefficients are encorded by an entropy coder. Zero coefficients are encorded with run-length encoding. The higher the frequency, the shorter code and vice versa. 
+### Decoding
+The variable-length code are decoded back to the quantized cofficient. The value is then multipled by the appropriate quantizer step size to get the DCT coefficent. With the DCT coefficent, the value is put in the inverse DCT to get the value of the domain. 
+#note: image will not be identical to orginal image due to lost of information in quantiziation
+### Motion Estimation and Compensation
+The motion feature are used as the reference frame to predict the current frame. With the predicted new frame is close to the actually frame size, the coded data is less than the original. The process is repeated over each block and processed in a timestamp.
+*Motion estimate is requires more computation resource hence, requires the highest activity in video process.*
 
